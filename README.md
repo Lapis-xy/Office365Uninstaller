@@ -1,31 +1,32 @@
 # Microsoft 365 Uninstaller & Cleanup (PowerShell)
 
-Questo script PowerShell automatizza la disinstallazione di **Microsoft 365 / Office** e pulisce eventuali file residui temporanei presenti in `C:\Windows\Temp\OfficeInstall`.
+This PowerShell script automates the uninstallation of **Microsoft 365 / Office** and cleans up any leftover installer files in `C:\Windows\Temp\OfficeInstall`.
 
 ---
 
-## Funzionalità
+## Features
 
-- Rileva tutte le installazioni di Microsoft 365 presenti sul sistema tramite il registro di Windows.
-- Esegue la disinstallazione in modalità silenziosa (`DisplayLevel=False`).
-- Rimuove eventuali file temporanei lasciati dall’installer in `C:\Windows\Temp\OfficeInstall`.
-- Mostra log dettagliati delle operazioni eseguite.
-
----
-
-## Requisiti
-
-- **Sistema operativo**: Windows 7 o superiore / Windows Server 2008 R2 o superiore.
-- **PowerShell**: compatibile con PowerShell 2.0 o superiore.
-- Permessi amministrativi per eseguire la disinstallazione e la rimozione di file in `C:\Windows\Temp`.
+- Detects all Microsoft 365 installations on the system via the Windows registry.
+- Performs silent uninstallation (`DisplayLevel=False`).
+- Removes leftover temporary installer files.
+- Provides detailed console output of actions performed.
 
 ---
 
-## Uso
+## Requirements
 
-1. Aprire **PowerShell come amministratore**.
-2. Salvare lo script in un file, ad esempio `Uninstall-M365.ps1`.
-3. Eseguire lo script:
+- **Operating System:** Windows 7 or later / Windows Server 2008 R2 or later.
+- **PowerShell:** Version 2.0 or higher.
+- **Administrator privileges** are required to uninstall Office and delete files in `C:\Windows\Temp`.
+
+---
+
+## Usage
+
+1. Open **PowerShell as Administrator**.
+2. Save the script as, for example, `Uninstall-M365.ps1`.
+3. Run the script:
 
 ```powershell
 .\Uninstall-M365.ps1
+
