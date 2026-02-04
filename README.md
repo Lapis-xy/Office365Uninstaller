@@ -24,9 +24,9 @@ This PowerShell script automates the uninstallation of **Microsoft 365 / Office*
 ## Usage
 
 1. Open **PowerShell as Administrator**.
-2. Save the script as, for example, `Uninstall-M365.ps1`.
+2. Save the script as, for example, `Office365Uninstaller.ps1`.
 3. Run the script:
 
 ```powershell
-.\Uninstall-M365.ps1
+.\Office365Uninstaller.ps1
 
